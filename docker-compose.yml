@@ -1,7 +1,10 @@
+version: '3.9'
+
 services:
   db:
     image: postgres:15
     container_name: gamebackend-db
+    restart: always
     environment:
       POSTGRES_USER: vapor
       POSTGRES_PASSWORD: vapor
@@ -14,13 +17,24 @@ services:
   app:
     build: .
     container_name: gamebackend-app
+    restart: always
     depends_on:
       - db
-    env_file: .env
     environment:
-      DATABASE_URL: ${DATABASE_URL}
+      DATABASE_HOST: db
+      DATABASE_PORT: 5432
+      DATABASE_USERNAME: vapor
+      DATABASE_PASSWORD: vapor
+      DATABASE_NAME: vapor
     ports:
       - "8080:8080"
+    # 👇 Добавляем отдельный volume для .build и .swiftpm
+    volumes:
+      - .:/app
+      - build_cache:/app/.build
+      - swiftpm_cache:/app/.swiftpm
 
 volumes:
   db_data:
+  build_cache:
+  swiftpm_cache:

@@ -19,18 +19,19 @@ struct SeedInitialData: AsyncMigration {
         )
 
         try await game.save(on: db)
+        let gameID = try game.requireID()
 
-        // ✅ Категории
-        let c1 = Category(title: "Кино", rivFileURL: nil, isAdult: false, isLocked: false)
-        let c2 = Category(title: "Наука", rivFileURL: "https://cdn.example.com/anim/science.riv", isAdult: false, isLocked: false)
-        let c3 = Category(title: "18+", rivFileURL: nil, isAdult: true, isLocked: true)
+        // ✅ Категории (передаём gameID)
+        let c1 = Category(title: "Кино", rivFileURL: nil, isAdult: false, isLocked: false, gameID: gameID)
+        let c2 = Category(title: "Наука", rivFileURL: "https://cdn.example.com/anim/science.riv", isAdult: false, isLocked: false, gameID: gameID)
+        let c3 = Category(title: "18+", rivFileURL: nil, isAdult: true, isLocked: true, gameID: gameID)
         try await c1.save(on: db)
         try await c2.save(on: db)
         try await c3.save(on: db)
 
         // ✅ Вопрос для игры + категории
         let q = GameQuestion(
-            gameID: try game.requireID(),
+            gameID: gameID,
             categoryID: try c1.requireID(),
             text: "Кто режиссёр фильма 'Интерстеллар'?"
         )

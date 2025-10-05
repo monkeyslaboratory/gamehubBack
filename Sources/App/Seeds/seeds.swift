@@ -25,27 +25,30 @@ struct SeedData: AsyncMigration {
             )
         )
         try await game.create(on: database)
+        let gameID = try game.requireID()
         
-        // 2️⃣ Добавляем категории
+        // 2️⃣ Добавляем категории (передаём обязательный gameID)
         let category1 = Category(
             title: "Фильмы",
             rivFileURL: "movies.riv",
             isAdult: false,
-            isLocked: false
+            isLocked: false,
+            gameID: gameID
         )
         let category2 = Category(
             title: "Музыка",
             rivFileURL: "music.riv",
             isAdult: false,
-            isLocked: false
+            isLocked: false,
+            gameID: gameID
         )
         try await category1.create(on: database)
         try await category2.create(on: database)
         
         // 3️⃣ Добавляем вопрос
         let question = GameQuestion(
-            gameID: game.id!,
-            categoryID: category1.id!,
+            gameID: gameID,
+            categoryID: try category1.requireID(),
             text: "Кто сыграл Джокера в фильме 'Тёмный рыцарь'?"
         )
         try await question.create(on: database)

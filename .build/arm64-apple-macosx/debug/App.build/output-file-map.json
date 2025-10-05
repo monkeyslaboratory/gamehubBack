@@ -2,12 +2,33 @@
   "": {
     "swift-dependencies": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/master.swiftdeps"
   },
+  "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Controllers/CategoryController.swift": {
+    "dependencies": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/CategoryController.d",
+    "object": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/CategoryController.swift.o",
+    "swiftmodule": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/CategoryController~partial.swiftmodule",
+    "swift-dependencies": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/CategoryController.swiftdeps",
+    "diagnostics": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/CategoryController.dia"
+  },
   "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Middlewares/ClientAuthMiddleware.swift": {
     "dependencies": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/ClientAuthMiddleware.d",
     "object": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/ClientAuthMiddleware.swift.o",
     "swiftmodule": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/ClientAuthMiddleware~partial.swiftmodule",
     "swift-dependencies": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/ClientAuthMiddleware.swiftdeps",
     "diagnostics": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/ClientAuthMiddleware.dia"
+  },
+  "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/AddGameDescriptionBlocks.swift": {
+    "dependencies": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/AddGameDescriptionBlocks.d",
+    "object": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/AddGameDescriptionBlocks.swift.o",
+    "swiftmodule": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/AddGameDescriptionBlocks~partial.swiftmodule",
+    "swift-dependencies": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/AddGameDescriptionBlocks.swiftdeps",
+    "diagnostics": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/AddGameDescriptionBlocks.dia"
+  },
+  "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/AddGameRelationToCategory.swift": {
+    "dependencies": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/AddGameRelationToCategory.d",
+    "object": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/AddGameRelationToCategory.swift.o",
+    "swiftmodule": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/AddGameRelationToCategory~partial.swiftmodule",
+    "swift-dependencies": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/AddGameRelationToCategory.swiftdeps",
+    "diagnostics": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/AddGameRelationToCategory.dia"
   },
   "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/CreateCategory.swift": {
     "dependencies": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/CreateCategory.d",
@@ -22,13 +43,6 @@
     "swiftmodule": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/CreateGame~partial.swiftmodule",
     "swift-dependencies": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/CreateGame.swiftdeps",
     "diagnostics": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/CreateGame.dia"
-  },
-  "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/CreateGameDescription.swift": {
-    "dependencies": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/CreateGameDescription.d",
-    "object": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/CreateGameDescription.swift.o",
-    "swiftmodule": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/CreateGameDescription~partial.swiftmodule",
-    "swift-dependencies": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/CreateGameDescription.swiftdeps",
-    "diagnostics": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/CreateGameDescription.dia"
   },
   "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/CreateGameQuestion.swift": {
     "dependencies": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/CreateGameQuestion.d",
@@ -57,13 +71,6 @@
     "swiftmodule": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/Game~partial.swiftmodule",
     "swift-dependencies": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/Game.swiftdeps",
     "diagnostics": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/Game.dia"
-  },
-  "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Models/GameDescription.swift": {
-    "dependencies": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/GameDescription.d",
-    "object": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/GameDescription.swift.o",
-    "swiftmodule": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/GameDescription~partial.swiftmodule",
-    "swift-dependencies": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/GameDescription.swiftdeps",
-    "diagnostics": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/GameDescription.dia"
   },
   "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Models/GameQuestion.swift": {
     "dependencies": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/GameQuestion.d",

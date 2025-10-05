@@ -1,12 +1,13 @@
+/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Controllers/CategoryController.swift
 /Users/SNNeprimerov/Documents/GameBackend/Sources/App/Middlewares/ClientAuthMiddleware.swift
+/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/AddGameDescriptionBlocks.swift
+/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/AddGameRelationToCategory.swift
 /Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/CreateCategory.swift
 /Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/CreateGame.swift
-/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/CreateGameDescription.swift
 /Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/CreateGameQuestion.swift
 /Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/SeedInitialData.swift
 /Users/SNNeprimerov/Documents/GameBackend/Sources/App/Models/Category.swift
 /Users/SNNeprimerov/Documents/GameBackend/Sources/App/Models/Game.swift
-/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Models/GameDescription.swift
 /Users/SNNeprimerov/Documents/GameBackend/Sources/App/Models/GameQuestion.swift
 /Users/SNNeprimerov/Documents/GameBackend/Sources/App/Seeds/seeds.swift
 /Users/SNNeprimerov/Documents/GameBackend/Sources/App/configure.swift

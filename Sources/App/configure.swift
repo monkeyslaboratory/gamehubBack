@@ -12,38 +12,46 @@ public func configure(_ app: Application) throws {
     app.middleware.use(CORSMiddleware(configuration: corsConfig))
 
     // MARK: - Database
-    guard let dbURL = Environment.get("DATABASE_URL") else {
-        app.logger.critical("DATABASE_URL is not set. Example: postgresql://user:password@host:5432/dbname")
-        throw Abort(.internalServerError, reason: "DATABASE_URL not configured")
+    if let dbURL = Environment.get("DATABASE_URL") {
+        // ✅ Подключение через полный URL
+        app.logger.info("Using DATABASE_URL for Postgres connection")
+        let postgres = try SQLPostgresConfiguration(url: dbURL)
+        app.databases.use(
+            .postgres(configuration: postgres),
+            as: .psql
+        )
+    } else {
+        // ✅ Подключение через отдельные переменные (Docker Compose / локально)
+        app.logger.info("Using individual DATABASE_* env variables for Postgres connection")
+
+        let hostname = Environment.get("DATABASE_HOST") ?? "localhost"
+        let port = Environment.get("DATABASE_PORT").flatMap(Int.init(_:)) ?? 5432
+        let username = Environment.get("DATABASE_USERNAME") ?? "vapor"
+        let password = Environment.get("DATABASE_PASSWORD") ?? "vapor"
+        let database = Environment.get("DATABASE_NAME") ?? "vapor"
+
+        app.databases.use(.postgres(
+            hostname: hostname,
+            port: port,
+            username: username,
+            password: password,
+            database: database
+        ), as: .psql)
     }
 
-    let postgres = try SQLPostgresConfiguration(url: dbURL)
-
-    app.databases.use(
-        .postgres(
-            configuration: postgres,
-            maxConnectionsPerEventLoop: 5,
-            connectionPoolTimeout: .seconds(10),
-            encodingContext: .default,
-            decodingContext: .default,
-            sqlLogLevel: .debug
-        ),
-        as: .psql
-    )
-
-    // MARK: - Server (чтобы слушать снаружи)
+    // MARK: - Server config (чтобы слушать снаружи)
     app.http.server.configuration.hostname = "0.0.0.0"
     app.http.server.configuration.port = 8080
 
     // MARK: - Migrations
     app.migrations.add(CreateGame())
-    app.migrations.add(CreateGameDescription())
     app.migrations.add(CreateCategory())
+    app.migrations.add(AddGameRelationToCategory())
     app.migrations.add(CreateGameQuestion())
     app.migrations.add(SeedInitialData())
     app.migrations.add(SeedData())
 
-    // MARK: - Auto-migrate on boot
+    // MARK: - Auto-migrate
     try app.autoMigrate().wait()
 
     // MARK: - Routes

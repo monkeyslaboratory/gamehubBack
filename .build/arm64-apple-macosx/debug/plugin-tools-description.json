@@ -502,7 +502,19 @@
       "inputs" : [
         {
           "kind" : "file",
+          "name" : "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Controllers/CategoryController.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Middlewares/ClientAuthMiddleware.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/AddGameDescriptionBlocks.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/AddGameRelationToCategory.swift"
         },
         {
           "kind" : "file",
@@ -511,10 +523,6 @@
         {
           "kind" : "file",
           "name" : "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/CreateGame.swift"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/CreateGameDescription.swift"
         },
         {
           "kind" : "file",
@@ -531,10 +539,6 @@
         {
           "kind" : "file",
           "name" : "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Models/Game.swift"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Models/GameDescription.swift"
         },
         {
           "kind" : "file",
@@ -577,15 +581,16 @@
       "moduleName" : "App",
       "moduleOutputPath" : "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/Modules/App.swiftmodule",
       "objects" : [
+        "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/CategoryController.swift.o",
         "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/ClientAuthMiddleware.swift.o",
+        "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/AddGameDescriptionBlocks.swift.o",
+        "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/AddGameRelationToCategory.swift.o",
         "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/CreateCategory.swift.o",
         "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/CreateGame.swift.o",
-        "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/CreateGameDescription.swift.o",
         "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/CreateGameQuestion.swift.o",
         "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/SeedInitialData.swift.o",
         "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/Category.swift.o",
         "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/Game.swift.o",
-        "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/GameDescription.swift.o",
         "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/GameQuestion.swift.o",
         "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/seeds.swift.o",
         "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/configure.swift.o",
@@ -759,7 +764,19 @@
       "outputs" : [
         {
           "kind" : "file",
+          "name" : "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/CategoryController.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/ClientAuthMiddleware.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/AddGameDescriptionBlocks.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/AddGameRelationToCategory.swift.o"
         },
         {
           "kind" : "file",
@@ -768,10 +785,6 @@
         {
           "kind" : "file",
           "name" : "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/CreateGame.swift.o"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/CreateGameDescription.swift.o"
         },
         {
           "kind" : "file",
@@ -788,10 +801,6 @@
         {
           "kind" : "file",
           "name" : "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/Game.swift.o"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/GameDescription.swift.o"
         },
         {
           "kind" : "file",
@@ -816,15 +825,16 @@
       ],
       "prepareForIndexing" : false,
       "sources" : [
+        "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Controllers/CategoryController.swift",
         "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Middlewares/ClientAuthMiddleware.swift",
+        "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/AddGameDescriptionBlocks.swift",
+        "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/AddGameRelationToCategory.swift",
         "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/CreateCategory.swift",
         "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/CreateGame.swift",
-        "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/CreateGameDescription.swift",
         "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/CreateGameQuestion.swift",
         "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/SeedInitialData.swift",
         "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Models/Category.swift",
         "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Models/Game.swift",
-        "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Models/GameDescription.swift",
         "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Models/GameQuestion.swift",
         "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Seeds/seeds.swift",
         "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/configure.swift",
@@ -39537,15 +39547,16 @@
       "-package-name",
       "gamebackend",
       "-c",
+      "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Controllers/CategoryController.swift",
       "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Middlewares/ClientAuthMiddleware.swift",
+      "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/AddGameDescriptionBlocks.swift",
+      "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/AddGameRelationToCategory.swift",
       "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/CreateCategory.swift",
       "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/CreateGame.swift",
-      "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/CreateGameDescription.swift",
       "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/CreateGameQuestion.swift",
       "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/SeedInitialData.swift",
       "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Models/Category.swift",
       "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Models/Game.swift",
-      "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Models/GameDescription.swift",
       "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Models/GameQuestion.swift",
       "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Seeds/seeds.swift",
       "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/configure.swift",
@@ -53644,7 +53655,19 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Controllers/CategoryController.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Middlewares/ClientAuthMiddleware.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/AddGameDescriptionBlocks.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/AddGameRelationToCategory.swift"
         },
         {
           "kind" : "file",
@@ -53653,10 +53676,6 @@
         {
           "kind" : "file",
           "name" : "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/CreateGame.swift"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Migrations/CreateGameDescription.swift"
         },
         {
           "kind" : "file",
@@ -53673,10 +53692,6 @@
         {
           "kind" : "file",
           "name" : "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Models/Game.swift"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/SNNeprimerov/Documents/GameBackend/Sources/App/Models/GameDescription.swift"
         },
         {
           "kind" : "file",
@@ -65080,7 +65095,19 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/AddGameDescriptionBlocks.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/AddGameRelationToCategory.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/Category.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/CategoryController.swift.o"
         },
         {
           "kind" : "file",
@@ -65096,19 +65123,11 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/CreateGameDescription.swift.o"
-        },
-        {
-          "kind" : "file",
           "name" : "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/CreateGameQuestion.swift.o"
         },
         {
           "kind" : "file",
           "name" : "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/Game.swift.o"
-        },
-        {
-          "kind" : "file",
-          "name" : "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/App.build/GameDescription.swift.o"
         },
         {
           "kind" : "file",

@@ -2,10 +2,10 @@ import Vapor
 import Fluent
 
 public func routes(_ app: Application) throws {
-    // MARK: - /api (с токеном)
+    // MARK: - /api (с авторизацией)
     let api = app.grouped("api").grouped(ClientAuthMiddleware())
 
-    // Проверка доступности сервера
+    // MARK: - Healthcheck
     api.get("health") { req async throws -> String in
         "ok"
     }
@@ -77,11 +77,86 @@ public func routes(_ app: Application) throws {
     }
 
     // MARK: - Categories
+
+    // GET /api/categories — список всех категорий
     api.get("categories") { req async throws -> [Category] in
         try await Category.query(on: req.db).all()
     }
 
-    // MARK: - Question
+    // GET /api/games/:gameID/categories — категории конкретной игры
+    api.get("games", ":gameID", "categories") { req async throws -> [Category] in
+        guard let gameID = req.parameters.get("gameID", as: UUID.self) else {
+            throw Abort(.badRequest, reason: "Missing gameID")
+        }
+
+        return try await Category.query(on: req.db)
+            .filter(\.$game.$id == gameID)
+            .all()
+    }
+
+    // POST /api/categories — создание категории
+    api.post("categories") { req async throws -> HTTPStatus in
+        struct Input: Content {
+            let title: String
+            let rivFileURL: String?
+            let isAdult: Bool
+            let isLocked: Bool
+            let gameID: UUID
+        }
+
+        let input = try req.content.decode(Input.self)
+
+        let category = Category(
+            title: input.title,
+            rivFileURL: input.rivFileURL,
+            isAdult: input.isAdult,
+            isLocked: input.isLocked,
+            gameID: input.gameID
+        )
+
+        try await category.save(on: req.db)
+        return .created
+    }
+
+    // PUT /api/categories/:id — обновление категории
+    api.put("categories", ":categoryID") { req async throws -> HTTPStatus in
+        struct Input: Content {
+            let title: String
+            let rivFileURL: String?
+            let isAdult: Bool
+            let isLocked: Bool
+            let gameID: UUID
+        }
+
+        let input = try req.content.decode(Input.self)
+
+        guard let category = try await Category.find(req.parameters.get("categoryID"), on: req.db) else {
+            throw Abort(.notFound, reason: "Category not found")
+        }
+
+        category.title = input.title
+        category.rivFileURL = input.rivFileURL
+        category.isAdult = input.isAdult
+        category.isLocked = input.isLocked
+        category.$game.id = input.gameID
+
+        try await category.save(on: req.db)
+        return .ok
+    }
+
+    // DELETE /api/categories/:id — удаление категории
+    api.delete("categories", ":categoryID") { req async throws -> HTTPStatus in
+        guard let category = try await Category.find(req.parameters.get("categoryID"), on: req.db) else {
+            throw Abort(.notFound, reason: "Category not found")
+        }
+
+        try await category.delete(on: req.db)
+        return .ok
+    }
+
+    // MARK: - Questions
+
+    // GET /api/games/:gameID/categories/:categoryID/question — получить вопрос
     api.get("games", ":gameID", "categories", ":categoryID", "question") { req async throws -> QuestionResponse in
         guard let game = try await Game.find(req.parameters.get("gameID"), on: req.db) else {
             throw Abort(.notFound, reason: "Game not found")
@@ -103,9 +178,31 @@ public func routes(_ app: Application) throws {
 
         return .init(gameID: gameID, categoryID: categoryID, question: q.text)
     }
+
+    // (опционально)
+    // POST /api/questions — добавление вопроса
+    api.post("questions") { req async throws -> HTTPStatus in
+        struct Input: Content {
+            let text: String
+            let categoryID: UUID
+            let gameID: UUID
+        }
+
+        let input = try req.content.decode(Input.self)
+
+        // Исправлено: корректные метки параметров и порядок в соответствии с init(id:gameID:categoryID:text:)
+        let question = GameQuestion(
+            gameID: input.gameID,
+            categoryID: input.categoryID,
+            text: input.text
+        )
+
+        try await question.save(on: req.db)
+        return .created
+    }
 }
 
-// MARK: - Response DTO для вопроса
+// MARK: - DTO
 struct QuestionResponse: Content {
     let gameID: UUID
     let categoryID: UUID

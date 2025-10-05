@@ -1,5 +1,5 @@
-import Vapor
 import Fluent
+import Vapor
 
 final class Category: Model, Content {
     static let schema = "categories"
@@ -19,13 +19,24 @@ final class Category: Model, Content {
     @Field(key: "is_locked")
     var isLocked: Bool
 
-    init() { }
+    @Parent(key: "game_id")
+    var game: Game
 
-    init(id: UUID? = nil, title: String, rivFileURL: String?, isAdult: Bool, isLocked: Bool) {
+    init() {}
+
+    init(
+        id: UUID? = nil,
+        title: String,
+        rivFileURL: String?,
+        isAdult: Bool,
+        isLocked: Bool,
+        gameID: UUID
+    ) {
         self.id = id
         self.title = title
         self.rivFileURL = rivFileURL
         self.isAdult = isAdult
         self.isLocked = isLocked
+        self.$game.id = gameID
     }
 }
