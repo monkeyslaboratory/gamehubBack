@@ -1,9 +1,10 @@
 services:
   db:
     image: postgres:15
+    container_name: gamebackend-db
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: vapor
+      POSTGRES_PASSWORD: vapor
       POSTGRES_DB: vapor
     ports:
       - "5432:5432"
@@ -12,13 +13,12 @@ services:
 
   app:
     build: .
+    container_name: gamebackend-app
     depends_on:
       - db
     env_file: .env
     environment:
       DATABASE_URL: ${DATABASE_URL}
-      IOS_TOKEN: ${IOS_TOKEN}
-      TELEGRAM_TOKEN: ${TELEGRAM_TOKEN}
     ports:
       - "8080:8080"
 

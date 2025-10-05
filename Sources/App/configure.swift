@@ -3,7 +3,7 @@ import Fluent
 import FluentPostgresDriver
 
 public func configure(_ app: Application) throws {
-    // CORS for Telegram Mini App/iOS
+    // MARK: - CORS (для iOS и Telegram Mini App)
     let corsConfig = CORSMiddleware.Configuration(
         allowedOrigin: .all,
         allowedMethods: [.GET, .POST, .PUT, .PATCH, .DELETE, .OPTIONS],
@@ -11,15 +11,27 @@ public func configure(_ app: Application) throws {
     )
     app.middleware.use(CORSMiddleware(configuration: corsConfig))
 
-    // Database
-    guard let dbURL = Environment.get("DATABASE_URL"),
-          let postgres = PostgresConfiguration(url: dbURL) else {
-        app.logger.critical("DATABASE_URL is not set or invalid. Example: postgresql://user:password@host:5432/dbname")
+    // MARK: - Database
+    guard let dbURL = Environment.get("DATABASE_URL") else {
+        app.logger.critical("DATABASE_URL is not set. Example: postgresql://user:password@host:5432/dbname")
         throw Abort(.internalServerError, reason: "DATABASE_URL not configured")
     }
-    app.databases.use(.postgres(configuration: postgres), as: .psql)
 
-    // Migrations
+    let postgres = try SQLPostgresConfiguration(url: dbURL)
+
+    app.databases.use(
+        .postgres(
+            configuration: postgres,
+            maxConnectionsPerEventLoop: 5,
+            connectionPoolTimeout: .seconds(10),
+            encodingContext: .default,
+            decodingContext: .default,
+            sqlLogLevel: .debug
+        ),
+        as: .psql
+    )
+
+    // MARK: - Migrations
     app.migrations.add(CreateGame())
     app.migrations.add(CreateGameDescription())
     app.migrations.add(CreateCategory())
@@ -27,9 +39,9 @@ public func configure(_ app: Application) throws {
     app.migrations.add(SeedInitialData())
     app.migrations.add(SeedData())
 
-    // Auto-migrate on boot
+    // MARK: - Auto-migrate on boot
     try app.autoMigrate().wait()
 
-    // Routes
+    // MARK: - Routes
     try routes(app)
 }
