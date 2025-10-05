@@ -31,6 +31,10 @@ public func configure(_ app: Application) throws {
         as: .psql
     )
 
+    // MARK: - Server (чтобы слушать снаружи)
+    app.http.server.configuration.hostname = "0.0.0.0"
+    app.http.server.configuration.port = 8080
+
     // MARK: - Migrations
     app.migrations.add(CreateGame())
     app.migrations.add(CreateGameDescription())
