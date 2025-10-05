@@ -1,8 +1,0 @@
-/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-service-lifecycle/Sources/ServiceLifecycle/AsyncCancelOnGracefulShutdownSequence.swift
-/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-service-lifecycle/Sources/ServiceLifecycle/AsyncGracefulShutdownSequence.swift
-/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-service-lifecycle/Sources/ServiceLifecycle/CancellationWaiter.swift
-/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-service-lifecycle/Sources/ServiceLifecycle/GracefulShutdown.swift
-/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-service-lifecycle/Sources/ServiceLifecycle/Service.swift
-/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-service-lifecycle/Sources/ServiceLifecycle/ServiceGroup.swift
-/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-service-lifecycle/Sources/ServiceLifecycle/ServiceGroupConfiguration.swift
-/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-service-lifecycle/Sources/ServiceLifecycle/ServiceRunnerError.swift

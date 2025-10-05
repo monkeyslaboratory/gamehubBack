@@ -1,3 +1,0 @@
-module Vapor {
-    header "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/Vapor.build/include/Vapor-Swift.h"
-}

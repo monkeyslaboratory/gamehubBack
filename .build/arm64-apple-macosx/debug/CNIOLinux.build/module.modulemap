@@ -1,4 +1,0 @@
-module CNIOLinux {
-    umbrella header "/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio/Sources/CNIOLinux/include/CNIOLinux.h"
-    export *
-}

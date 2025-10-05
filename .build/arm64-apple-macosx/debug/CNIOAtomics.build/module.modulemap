@@ -1,4 +1,0 @@
-module CNIOAtomics {
-    umbrella header "/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio/Sources/CNIOAtomics/include/CNIOAtomics.h"
-    export *
-}
