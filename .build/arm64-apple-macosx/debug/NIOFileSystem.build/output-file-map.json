@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/NIOFileSystem.build/master.swiftdeps"
+  },
+  "/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio/Sources/NIOFileSystem/Exports.swift": {
+    "dependencies": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/NIOFileSystem.build/Exports.d",
+    "object": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/NIOFileSystem.build/Exports.swift.o",
+    "swiftmodule": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/NIOFileSystem.build/Exports~partial.swiftmodule",
+    "swift-dependencies": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/NIOFileSystem.build/Exports.swiftdeps",
+    "diagnostics": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/NIOFileSystem.build/Exports.dia"
+  }
+}

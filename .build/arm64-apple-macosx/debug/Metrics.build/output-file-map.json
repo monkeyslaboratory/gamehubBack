@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/Metrics.build/master.swiftdeps"
+  },
+  "/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-metrics/Sources/Metrics/Metrics.swift": {
+    "dependencies": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/Metrics.build/Metrics.d",
+    "object": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/Metrics.build/Metrics.swift.o",
+    "swiftmodule": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/Metrics.build/Metrics~partial.swiftmodule",
+    "swift-dependencies": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/Metrics.build/Metrics.swiftdeps",
+    "diagnostics": "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/Metrics.build/Metrics.dia"
+  }
+}

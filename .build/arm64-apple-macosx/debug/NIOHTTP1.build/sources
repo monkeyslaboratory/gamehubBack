@@ -1,0 +1,17 @@
+/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio/Sources/NIOHTTP1/ByteCollectionUtils.swift
+/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio/Sources/NIOHTTP1/HTTPDecoder.swift
+/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio/Sources/NIOHTTP1/HTTPEncoder.swift
+/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio/Sources/NIOHTTP1/HTTPHeaderValidator.swift
+/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio/Sources/NIOHTTP1/HTTPHeaders+Validation.swift
+/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio/Sources/NIOHTTP1/HTTPPipelineSetup.swift
+/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio/Sources/NIOHTTP1/HTTPServerPipelineHandler.swift
+/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio/Sources/NIOHTTP1/HTTPServerProtocolErrorHandler.swift
+/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio/Sources/NIOHTTP1/HTTPServerUpgradeHandler.swift
+/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio/Sources/NIOHTTP1/HTTPTypedPipelineSetup.swift
+/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio/Sources/NIOHTTP1/HTTPTypes.swift
+/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio/Sources/NIOHTTP1/NIOHTTPClientUpgradeHandler.swift
+/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio/Sources/NIOHTTP1/NIOHTTPObjectAggregator.swift
+/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio/Sources/NIOHTTP1/NIOTypedHTTPClientUpgradeHandler.swift
+/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio/Sources/NIOHTTP1/NIOTypedHTTPClientUpgraderStateMachine.swift
+/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio/Sources/NIOHTTP1/NIOTypedHTTPServerUpgradeHandler.swift
+/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio/Sources/NIOHTTP1/NIOTypedHTTPServerUpgraderStateMachine.swift

@@ -1,0 +1,4 @@
+module _CWASI {
+    umbrella header "/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-distributed-tracing/Sources/_CWASI/include/_CWASI.h"
+    export *
+}

@@ -1,0 +1,4 @@
+module CAsyncHTTPClient {
+    umbrella header "/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/async-http-client/Sources/CAsyncHTTPClient/include/CAsyncHTTPClient.h"
+    export *
+}

@@ -1,0 +1,3 @@
+module SQLKitBenchmark {
+    header "/Users/SNNeprimerov/Documents/GameBackend/.build/arm64-apple-macosx/debug/SQLKitBenchmark.build/include/SQLKitBenchmark-Swift.h"
+}

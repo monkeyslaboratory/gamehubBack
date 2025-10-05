@@ -1,0 +1,12 @@
+'/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio-extras/Sources/NIOSOCKS/Channel Handlers/SOCKSClientHandler.swift'
+'/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio-extras/Sources/NIOSOCKS/Channel Handlers/SOCKSServerHandshakeHandler.swift'
+/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/AuthenticationMethod.swift
+/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/ClientGreeting.swift
+/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/Errors.swift
+/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/Helpers.swift
+/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/Messages.swift
+/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/SOCKSRequest.swift
+/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/SOCKSResponse.swift
+/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/SelectedAuthenticationMethod.swift
+/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio-extras/Sources/NIOSOCKS/State/ClientStateMachine.swift
+/Users/SNNeprimerov/Documents/GameBackend/.build/checkouts/swift-nio-extras/Sources/NIOSOCKS/State/ServerStateMachine.swift
